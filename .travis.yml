@@ -4,9 +4,9 @@ python:
   - "3.6"
 
 install:
-  #- pip install -U pytest
+  - pip install -U pytest
   - pip install unittest2
 # Command to run tests
-script: python tdd/test_core.py
-  #- pytest
+script:
+  - pytest
 
