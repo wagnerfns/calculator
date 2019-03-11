@@ -1,12 +1,20 @@
 language: python
+
+# run python versions
 python:
   - "2.7"
   - "3.6"
 
+sudo: required
+
+# command to install dependencies
 install:
   - pip install -U pytest
   - pip install unittest2
+
 # Command to run tests
 script:
   - pytest
 
+notification:
+  email: false
