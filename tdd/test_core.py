@@ -1,6 +1,6 @@
 import unittest
-import sys
-sys.path.insert(0,'~/github/calculator/operations.py')
+#import sys
+#sys.path.insert(0,'~/github/calculator/operations.py')
 from operations import Operations
 
 
