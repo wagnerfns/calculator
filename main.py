@@ -1,7 +1,7 @@
 # coding:utf-8
-
 import os
 from operations import Operations
+
 print("Calculator in python")
 
 print("\nChoice operation ")
