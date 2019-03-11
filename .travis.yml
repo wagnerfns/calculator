@@ -7,6 +7,6 @@ install:
   #- pip install -U pytest
   - pip install unittest2
 # Command to run tests
-script:
-  - pytest
+script: python test_core.py
+  #- pytest
 
