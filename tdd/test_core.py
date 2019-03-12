@@ -20,10 +20,6 @@ class TestMethods(unittest.TestCase):
         operation = Operations(100,100)
         self.assertEqual(operation.setDivision(), 1, 'Incorrect result')
 
-    def test_operation_division(self):
-        operation = Operations(100,0)
-        self.assertEqual(operation.setDivision(), 1, 'Incorrect result')
-
     def test_operation_root(self):
         operation = Operations(100,1)
         self.assertEqual(operation.setRoot(), 10, 'Incorrect result')
