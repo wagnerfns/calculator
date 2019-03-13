@@ -17,6 +17,6 @@ install:
 script:
   - pytest
   - coverage run -m pytest test/test_core.py
-  - coverage report -m
+  
 notification:
   email: false
