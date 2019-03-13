@@ -11,10 +11,12 @@ sudo: required
 install:
   - pip install -U pytest
   - pip install unittest2
+  - pip install coverage
 
 # Command to run tests
 script:
   - pytest
-
+  - coverage run -m pytest test/test_core.py
+  - coverage report -m
 notification:
   email: false
