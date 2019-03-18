@@ -57,8 +57,7 @@ while(exit == 0):
         print("result: {}".format(result))
     elif(operator == 7):
         print("separate by ',' the values")
-        value1 = [float(x) for x in input("\nValue 1: ").split(',')]
-        
+        value1 = [float(x)for x in raw_input("\nValue 1: ").split(',')]
         operation = Operations(value1, False)
         result = operation.avg()
         print("result: {}".format(result))
