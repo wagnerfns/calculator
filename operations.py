@@ -4,32 +4,31 @@ class Operations:
     def __init__(self, value1):
         self.value1 = value1
 
-    def __init__(self, value1, value2):
-        self.value1 = value1
-        self.value2 = value2
-
+    def __init__(self, value1, value2, verbose=True):
+        if(verbose):
+            self.value1 = value1
+            self.value2 = value2
+        else:
+            self.value1 = value1
     def setAddition(self):
-        print("result: {}".format(self.value1 + self.value2))
         return(self.value1 + self.value2)
 
     def setSubtraction(self):
-        print("result: {}".format(self.value1 - self.value2))
         return(self.value1 - self.value2)
 
     def setMultiplication(self):
-        print("result: {}".format(self.value1 * self.value2))
         return(self.value1 * self.value2)
 
     def setDivision(self):
-        print("result: {}".format(self.value1 / self.value2))
-        return(self.value1 / self.value2)
-
+        if(self.value2 != 0):
+            return(self.value1 / self.value2)
+        else:
+            print("result: division by zero")
+            return(None) 
     def setRoot(self):
-        print("Result: {}".format(math.sqrt(self.value1)))
         return(math.sqrt(self.value1))
 
     def setPotentiation(self):
-        print("Result: {}".format(self.value1 ** 2))
         return(self.value1 ** 2)
 
     def avg(self):

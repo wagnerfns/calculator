@@ -22,7 +22,7 @@ class TestMethods(unittest.TestCase):
 
     def test_operation_division_by_zero(self):
         operation = Operations(100,0)
-        self.assertEqual(operation.setDivision(), 1, 'Incorrect result')
+        self.assertEqual(operation.setDivision(), None, 'Incorrect result')
 
     def test_operation_root(self):
         operation = Operations(100,1)
@@ -31,6 +31,10 @@ class TestMethods(unittest.TestCase):
     def test_operation_potentiation(self):
         operation = Operations(10,1)
         self.assertEqual(operation.setPotentiation(), 100, 'Incorrect result')
+
+    def test_avg(self):
+        operation = Operations([1,2,3,4], False)
+        self.assertAlmostEqual(operation.avg(), 2.5, 'Incorrect result')
 
 if __name__ == '__main__':
     unittest.main()
