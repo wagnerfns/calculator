@@ -33,7 +33,7 @@ class TestMethods(unittest.TestCase):
         self.assertEqual(operation.setPotentiation(), 100, 'Incorrect result')
 
     def test_avg(self):
-        operation = Operations(list([1,2,3,4]), False)
+        operation = Operations(list([int(1),int(2)]), False)
         self.assertAlmostEqual(operation.avg(), 2.5, 'Incorrect result')
 
 if __name__ == '__main__':
