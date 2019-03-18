@@ -26,15 +26,15 @@ class TestMethods(unittest.TestCase):
 
     def test_operation_root(self):
         operation = Operations(100,1)
-        self.assertEqual(operation.setRoot(), 10, 'Incorrect result')
+        self.assertEqual(operation.setRoot(), 10,  'Incorrect result')
 
     def test_operation_potentiation(self):
         operation = Operations(10,1)
-        self.assertEqual(operation.setPotentiation(), 100, 'Incorrect result')
+        self.assertEqual(operation.setPotentiation(), 100,  'Incorrect result')
 
     def test_avg(self):
-        operation = Operations(list([int(1),int(2)]), False)
-        self.assertAlmostEqual(operation.avg(), 2.5, 'Incorrect result')
+        operation = Operations([1,2,3,4], False)
+        self.assertAlmostEqual(operation.avg(), 2.5, msg='Incorrect result')
 
 if __name__ == '__main__':
     unittest.main()
