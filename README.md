@@ -1,5 +1,6 @@
 # Calculator
 [![Build Status](https://travis-ci.org/wagnerfns/calculator-CI.svg?branch=master)](https://travis-ci.org/wagnerfns/calculator-CI)
+
 Este é um repositório para estudo e prática de integração contínua(CI) em Python utilizando Travis como ferramenta de CI.
 
 ### Download 
