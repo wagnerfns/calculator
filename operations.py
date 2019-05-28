@@ -10,25 +10,27 @@ class Operations:
             self.value2 = value2
         else:
             self.value1 = value1
-    def setAddition(self):
+
+    def addition(self):
         return(self.value1 + self.value2)
 
-    def setSubtraction(self):
+    def subtraction(self):
         return(self.value1 - self.value2)
 
-    def setMultiplication(self):
+    def multiplication(self):
         return(self.value1 * self.value2)
 
-    def setDivision(self):
+    def division(self):
         if(self.value2 != 0):
             return(self.value1 / self.value2)
         else:
             print("result: division by zero")
-            return(None) 
-    def setRoot(self):
+            return(None)
+            
+    def root(self):
         return(math.sqrt(self.value1))
 
-    def setPotentiation(self):
+    def potentiation(self):
         return(self.value1 ** 2)
 
     def avg(self):
