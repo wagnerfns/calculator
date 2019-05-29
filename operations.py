@@ -34,5 +34,4 @@ class Operations:
         return(self.value1 ** 2)
 
     def avg(self):
-        return(sum(self.value1)/len(self.value1))
-        #return(float(sum(self.value1))/len(self.value1))
+        return(float(sum(self.value1))/len(self.value1))
