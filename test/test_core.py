@@ -34,7 +34,7 @@ class TestMethods(unittest.TestCase):
 
     def test_avg(self):
         operation = Operations([1,2,3,4], False)
-        self.assertAlmostEqual(operation.avg(), 2.5, msg='Incorrect result')
+        self.assertAlmostEqual(operation.avg(), 2.0, msg='Incorrect result')
 
     def test_factorial(self):
         operation = Operations(6,1)
